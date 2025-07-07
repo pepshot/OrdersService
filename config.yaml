@@ -1,0 +1,17 @@
+http:
+  port: "8080"
+
+database:
+  host: "localhost"
+  port: "5432"
+  user: "user"
+  password: "user"
+  name: "orders"
+
+kafka:
+  brokers:
+    - "localhost:9092"
+  topic: "orders"
+  group_id: "order-service-group"
+  min_bytes: 10000
+  max_bytes: 10000000
